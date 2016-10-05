@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body {
+	background-image: url(wood.jpg);
+}
+
+	ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    opacity: .8;
+}
+
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 30px;
+    font-family: Anna;
+}
+img {
+	padding-left: 150px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+</style>
+	<title></title>
+</head>
+<body>
+<ul class="topnav" id="myTopnav">
+  <li><a href="bioshock1.html">Home</a></li>
+  <li><a href="location.html">Take a Look Around</a></li>
+  <li><a href="collectables.html">Plasmids</a></li>
+  <li><a href="synopsis.html">Synopsis</a></li>
+
+  <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+</ul>
+<br>
+<div class="rap">
+<img src="RaptureMap1.png" title="map of rapture" usemap="#rapture">
+<map name="rapture">
+<area shape="poly" coords="703,767,462,796,439,614,678,582" href="arcadia.html">
+<area shape="poly" coords="789,247,986,292,950,445,756,400" href="fortfrolic.html">
+<area shape="poly" coords="225,399,379,372,402,495,245,523" href="OlympusHeights.html">
+<area shape="poly" coords="776,489,733,672,970,730,1013,544" href="welomecenter.html">
+</map>
+</div>
+</body>
+</html>

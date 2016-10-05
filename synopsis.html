@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.slideshow-container {
+ max-height: 1000px;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-bottom:150px;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    opacity: .8;
+}
+
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 30px;
+    font-family: Anna;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* Caption text */
+.text {
+  
+  font-size: 30px;
+  padding-bottom: 29px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  right: 0;
+  color: black;
+  font-family: Maiden Orange;
+  color: white;
+  background-color: rgba(32,178,170,0.2);
+  max-height: 400px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+body {
+	font-family: Maiden Orange;
+	font-size: 30px;
+	background-image: url(br.jpg);
+	background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 40em;
+    color: white;
+}
+h1 {
+	text-align: center;
+	font-size: 3em;
+}
+
+p {
+	font-size: 30px;
+	background-color: rgba(32,178,170,0.2);
+
+}
+.move {
+	
+	float: left;
+}
+
+footer {
+	background-color: #717171;
+}
+
+h2 span {
+ 	float:left;
+ 	margin-top: 10px;
+ 	margin-left: 10px;
+
+ }
+ h2 div{
+ 	float:right;
+ 	padding-top: 50px;}
+h2{
+	overflow: auto;
+} 	
+</style>
+	<title></title>
+</head>
+<body>
+<ul class="topnav" id="myTopnav">
+  <li><a href="bioshock1.html">Home</a></li>
+  <li><a href="location.html">Take a Look Around</a></li>
+  <li><a href="collectables.html">Collectables</a></li>
+
+  <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+</ul>
+<h1>synopsis</h1>
+<div width="700px" class="slideshow-container">
+  <div class="mySlides fade">
+  
+    <img src="jack.jpg" style="width:100%">
+    <div class="text"><div>Jack</div> 
+    <br>
+    <p>
+    is the protagonist of BioShock. He is a young male who, prior to his unwilling arrival in Rapture, was a passenger on an airplane that crashed near the lighthouse that provided entry to the underwater city. During his journey through Rapture, Jack comes across a number of gene altering substances, known as Plasmids, that he uses to empower and protect himself. According to the passport he used to board the plane, his full name is Jack Wynand.</p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+
+    <img src="atlas.jpg" style="width:100%">
+    <div class="text"><div>"I am not a liberator. Liberators do not exist. These people will liberate themselves."―Atlas</div>
+    <br>
+Atlas is the revolutionary who led many of the disillusioned of Rapture against Andrew Ryan and his supporters during the Civil War. A significant character in BioShock, he guides the player through the failing utopia after Jack's arrival. Atlas speaks with an Irish accent, specifically, a working class Dublin accent.
+</div>
+  </div>
+
+  <div class="mySlides fade">
+  
+    <img src="Andrew_Ryan.png" style="height:700px; width:100%">
+    <div class="text"><div>"We all make choices. But in the end, our choices make us." - Andrew Ryan</div>
+Andrew Ryan is the founder of Rapture and the owner of Ryan Industries. He is the main antagonist throughout most of BioShock. He is the Chairman of the Rapture City Council, owner and operator of Hephaestus, and one of the most important men in the city. He only appears in person in the Rapture Central Control level, but he sends radio communications throughout the first half of the game.
+</div>
+  </div>
+
+  <div class="mySlides fade">
+   
+    <img src="DT.jpg" style="width:100%">
+    <div class="text">Dr. Brigid Tenenbaum
+    <br> is a geneticist who discovered ADAM and helped develop it into products for commercial sale. She is also the "mother" of the Little Sisters. She created them, and eventually came to care a great deal about their safety, calling them her "little ones", acting as a mother to them, and regretting her part in helping create them. The player is able to win her allegiance by saving the Little Sisters instead of harvesting them for ADAM.
+    </div>  
+  </div>
+
+ <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  </div>
+
+<br>
+<h2>
+<span>
+
+<br>
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rrqfPG4ZcAA" frameborder="0" allowfullscreen>Watch the trailer</iframe> 
+</div>
+<p>
+The year is 1960, while flying over the Atlantic ocean, average citizen Jack blacks out and awakens to discover that he is the sole survivor of a plane crash. Amidst the wreckage of his plane Jack spots and swims to a lighthouse and boards a Bathysphere that takes him deep within the ocean and into Rapture. Originally conceived as a utopia where a man would be entitled to all that he made without the interference of "parasites" by idealistic billionaire mogul Andrew Ryan. Rapture has since decayed and festered from the infectious effects of civil war and anarchy, brought about by the very ideals it citizens and it's leader embrace. Aided by a sympathetic smuggler and a rogue geneticist, Jack salvages gene altering chemicals transforming himself into a superhuman, and uses his newfound powers and abilities as well as an arsenal of weapons to fend off the vicious hordes of psychotic mutants, security robots and armored supersoldiers that resulted from Rapture's unrest while given the choice to either rescue or lethally harvest the genetic material from Rapture's only citizens with a chance: the 10 year old "Little Sisters". As Jack wanders through the condemning atmosphere of rapture, he treads towards a secret that for could shatter all that he has known forever.</p>
+</span>
+</h2>
+<br>
+
+  <footer></footer>
+</body>
+<script type="text/javascript">
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+</script>\
+
+</html>

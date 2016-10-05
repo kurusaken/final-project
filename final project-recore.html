@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+  body {
+    background: url(recore.jpg); 
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 40em;
+    margin-top: 0;
+    padding-top: 0;
+    font-family: minim;
+    color: black;
+    padding-top: 100px;
+    font-size: 2em;
+    opacity: .9;
+
+  }
+
+  .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top:150px;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  right: 0;
+  color: black;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+</style>
+ 
+</head>
+<body>
+<h1>Survival Starts in the Core</h1><br>
+
+<div class="recore">From the legendary creator Keiji Inafune and the makers of Metroid Prime comes ReCore, an action-adventure masterfully crafted for a new generation. As one of the last remaining humans, forge friendships with courageous robot companions and lead them on an epic adventure through a mysterious dynamic world.</div>
+<br>
+
+
+
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WnKT9ZCGgBE" frameborder="0" allowfullscreen></iframe>
+<br>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+  
+    <img src="joule.jpg" style="width:100%">
+    <div class="text">Joule Adams<br><br>One of the first brave volnteers for the Far Eden colony, Joule Adams wakes after centuries of cryo-sleepto find that nothing has gone according to plan. With her trusty corebot companion,Mack,Joule begins her adventure in Far Edento save mankind from a terrible fate.</div>
+  </div>
+
+  <div class="mySlides fade">
+
+    <img src="mack.jpg" style="width:100%">
+    <div class="text">Mack (K-9)<br><br>Designed for cheerfulness and loyalty, the Mack core is most comfortable in the K-9 frame. Like other Corebots of his type, Mack is responsible for the tracking and retrieval of components vital to the upkeep of “Far Eden's” atmospheric processors and other equipment. Mack is also the designated companion of Joule Adams. </div>
+  </div>
+
+  <div class="mySlides fade">
+  
+    <img src="seth.jpg" style="width:100%">
+    <div class="text">Seth (SP-DR)<br><br>Shy and sometimes fearful, Seth is nonetheless an extremely capable core who excels inside the SP-DR frame. Corebots of Seth’s type were assigned delicate, details-oriented construction tasks high above the shifting sands of Far Eden. Despite his nervous nature, Seth can reliably lift loads many times his weight over great distances.</div>
+  </div>
+
+  <div class="mySlides fade">
+   
+    <img src="duncan.jpg" style="width:100%">
+    <div class="text">Duncan (AP-3) A rugged Core with a gruff and stubborn personality, Duncan is well-suited to the AP-3 frame. In this configuration, Duncan was originally tasked with excavating the foundations of the Far Eden colony. But he will now aggressively smash rocks and other obstacles that have clogged colony facilities over time.</div>
+
+    
+  </div>
+ <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+</body>
+<script type="text/javascript">
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+</html>
